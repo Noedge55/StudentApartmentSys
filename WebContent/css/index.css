@@ -1,0 +1,41 @@
+body{
+	background: linear-gradient(rgba(38, 172, 217,0.7), rgba(38, 172, 217,0)) no-repeat;
+}
+.container
+{
+	text-align: center;
+}
+.content
+{
+	text-align: center;
+}
+.content .content1
+{
+	display:inline-block;
+	width: 290px;
+	height:300px;
+	border: solid rgb(0, 172, 230);
+	border-radius: 6px;	
+}
+.content1 font
+{
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
+	background:rgb(0, 172, 230);
+}
+.content ul
+{
+	list-style: none;
+	float: left;
+}
+.content a
+{
+	text-decoration: none;
+}
+.content .end
+{
+	text-align: center;
+}

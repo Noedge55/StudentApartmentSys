@@ -1,0 +1,83 @@
+body{
+	background: linear-gradient(rgba(38, 172, 217,0.7), rgba(38, 172, 217,0)) no-repeat;
+}
+.container{
+	width: 1080px;
+	margin: 0px auto;
+}
+.content{
+	width:700px;
+	height: 700px;
+	margin:0px auto;
+	border-style: solid;
+	border-color: rgb(38,172,217);
+	border-radius: 6px;
+}
+.function{
+	width: 500px;
+	margin: 0px auto;
+	margin-bottom: 10px;
+}
+.function input{
+	background: rgb(38,172,217);
+	color: #fff;
+}
+ 
+.left{
+	display:inline-block;
+	position:relative;
+	width: 200px;
+	min-height: 700px;
+	border-right: solid rgb(38,172,217);
+}
+.right{
+	display:inline-block;
+	position:absolute;
+	width: 500px;
+	min-height: 700px;
+}
+font{
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
+	background:rgb(0, 172, 230);
+}
+.list{
+	margin: 0px auto;
+	margin-top:10px;
+	text-align:center;
+	width:480px;
+	
+}
+.left-ul li{
+	margin-bottom: 10px;
+}
+.right-ul{
+	margin-bottom: 40px;
+}
+.right-ul li{
+	display: inline-block;
+	list-style: none;
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+a:link { text-decoration: none;color: blue}
+a:active { text-decoration:blink}
+a:hover { text-decoration:underline;color: red} 
+a:visited { text-decoration: none;color: blue}
+
+.actived{
+	background: white;
+}
+.unactived{
+
+}
+
+.level{
+	display: inline-block;
+	margin: 10px;
+}

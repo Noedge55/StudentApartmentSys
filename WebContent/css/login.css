@@ -1,0 +1,38 @@
+body{
+	background: linear-gradient(rgba(38, 172, 217,0.7), rgba(38, 172, 217,0)) no-repeat;
+}
+div.login-container
+{
+	display:block;
+	margin: 100px auto;
+	width: 450px;
+	height: 350px;
+	background-color: #ffffff;
+	border-style: dotted;
+	border-color: gray;
+	border-radius: 20px;
+	text-align: center;
+}
+img.user-avatar
+{
+	margin: 10px 190px;
+	width:70px;
+	height: 70px;
+}
+input.input-login
+{   
+	display:block;
+	width:200px;
+	margin:20px auto;
+    height:32px;
+    line-height:32px;  
+    border:1px solid #e7e7e7;
+    padding-left:32px;
+    background-repeat: no-repeat;
+}
+input.button-login
+{
+	display:inline-block;
+	border:1px solid #e7e7e7;
+	margin-left: 20px;
+}
