@@ -2,13 +2,7 @@
 <html>
 <head>
 <title>卫生信息</title>
-<script type="text/javascript">
-	var id = "<%=session.getAttribute("userid")%>"
-	if(id == "null"){
-		alert("你还没有登录，请登录");
-		window.location.href="index.jsp";
-	}
-</script>
+<link rel="stylesheet" href="css/reset.min.css">
 <style type="text/css">
 	body{
 		background: linear-gradient(rgba(38, 172, 217,0.7), rgba(38, 172, 217,0)) no-repeat;
@@ -42,6 +36,13 @@
 		color: #fff;
 	}
 </style>
+<script type="text/javascript">
+	var id = "<%=session.getAttribute("userid")%>"
+	if(id == "null"){
+		alert("你还没有登录，请登录");
+		window.location.href="index.jsp";
+	}
+</script>
 </head>
 <body>
 	<div class="container">

@@ -3,6 +3,7 @@
 <html>
 	<head>
 	<title>学生公寓管理系统-登录界面</title>
+		<link rel="stylesheet" href="css/reset.min.css">
 		<link rel="stylesheet" href="css/login.css">
 	</head>
 	<body>

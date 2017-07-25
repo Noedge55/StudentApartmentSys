@@ -1,6 +1,7 @@
 <%@ page contentType="text/html" pageEncoding="utf-8" %>
 <html>
 <head>
+	<link rel="stylesheet" href="css/reset.min.css">
 	<link rel="stylesheet" href="css/head.css">
 	<script type="text/javascript">
 		function show() {

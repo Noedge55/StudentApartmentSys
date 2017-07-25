@@ -4,6 +4,7 @@
 <html>
 <head>
 <title>寝室管理界面</title>
+<link rel="stylesheet" href="css/reset.min.css">
 <link rel="stylesheet" href="css/dormitory-manager.css">
 <script type="text/javascript">
 	var id = "<%=session.getAttribute("userid")%>"

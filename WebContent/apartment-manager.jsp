@@ -18,6 +18,7 @@
 			alert(info);
 		}
 </script>
+<link rel="stylesheet" href="css/reset.min.css">
 <link rel="stylesheet" href="css/apartment-manager.css">
 </head>
 <body>

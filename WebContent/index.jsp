@@ -4,6 +4,7 @@
 <head>
 	<title>学生公寓管理系统-首页</title>
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/reset.min.css">
 	<script type="text/javascript">
 	
 	</script>

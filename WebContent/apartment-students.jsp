@@ -72,7 +72,7 @@ table,tr,td{
 		<div class="right">
 			<font class="title">西一栋：学生信息</font>
 			<div class="function">
-				<input type="button" value="添加学生" onclick="window.location.href='apartment-add.jsp'" id="add_apartment">
+				<input type="button" value="添加学生" onclick="window.location.href='student-add.jsp'" id="add_apartment">
 				<form action="findApartmentServlet" method="post" style="float: right;">
 					<input type="submit" value="查询">
 					<input type="text" name="keyword" style="background: #fff;color: #000;" placeholder="输入公寓号">

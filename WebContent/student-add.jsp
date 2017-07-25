@@ -2,6 +2,44 @@
 <html>
 <head>
 <title>添加学生</title>
+<link rel="stylesheet" href="css/reset.min.css">
+<style type="text/css">
+	body{
+		background: linear-gradient(rgba(38, 172, 217,0.7), rgba(38, 172, 217,0)) no-repeat;
+	}
+	div{
+		text-align:center;
+		width:400px;
+		height:300px;
+		margin:0px auto;
+		border-style: solid;
+		border-color: rgb(38,172,217);
+		border-radius: 6px;
+	}
+	font{
+		display: block;
+		margin-top: 10px;
+		margin-bottom:10px;
+		text-align: center;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		color: white;
+		background:rgb(0, 172, 230);
+	}
+	table{
+		margin:0px auto;
+		text-align: center;
+		padding: 10px;
+	}
+	.btn{
+		background: rgb(38,172,217);
+		color: #fff;
+	}
+	span{
+		display:inline-block;
+		width: 120px;
+		color: red;
+	}
+</style>
 <script type="text/javascript">
 	var id = "<%=session.getAttribute("userid")%>"
 	if(id == "null"){
@@ -61,43 +99,6 @@
 			   validatePhonenum(f.phonenum.value)	;
 	}
 </script>
-<style type="text/css">
-	body{
-		background: linear-gradient(rgba(38, 172, 217,0.7), rgba(38, 172, 217,0)) no-repeat;
-	}
-	div{
-		text-align:center;
-		width:400px;
-		height:300px;
-		margin:0px auto;
-		border-style: solid;
-		border-color: rgb(38,172,217);
-		border-radius: 6px;
-	}
-	font{
-		display: block;
-		margin-top: 10px;
-		margin-bottom:10px;
-		text-align: center;
-		font-family: "Comic Sans MS", cursive, sans-serif;
-		color: white;
-		background:rgb(0, 172, 230);
-	}
-	table{
-		margin:0px auto;
-		text-align: center;
-		padding: 10px;
-	}
-	.btn{
-		background: rgb(38,172,217);
-		color: #fff;
-	}
-	span{
-		display:inline-block;
-		width: 120px;
-		color: red;
-	}
-</style>
 </head>
 <body>
 	<div>

@@ -51,6 +51,10 @@ font{
 	width:480px;
 	
 }
+.left-ul{
+	margin-top:10px;
+	text-align: center;
+}
 .left-ul li{
 	margin-bottom: 10px;
 }

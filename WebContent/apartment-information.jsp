@@ -4,6 +4,7 @@
 <html>
 <head>
 <title>公寓基本信息</title>
+<link rel="stylesheet" href="css/reset.min.css">
 <style type="text/css">
 	body{
 		background: linear-gradient(rgba(38, 172, 217,0.7), rgba(38, 172, 217,0)) no-repeat;
