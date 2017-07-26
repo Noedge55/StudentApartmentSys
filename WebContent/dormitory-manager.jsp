@@ -61,6 +61,7 @@
 						<span style="font-size: 10px;color: red;">选择楼层→</span>
 						<select id="level_id" onchange="findLevel()">
 							<c:forEach begin="1" end="${pageCount }" varStatus="status">
+								<!-- 列表显示楼层 -->
 								<option value="${status.count }" selected="<c:if test="${status.count==pageNow }"><c:out value="selected"></c:out></c:if>">${status.count }楼</option>				
 							</c:forEach>
 						</select>
