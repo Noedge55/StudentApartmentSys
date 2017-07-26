@@ -39,6 +39,8 @@
 		width: 120px;
 		color: red;
 	}
+	table tr{
+	}
 </style>
 <script type="text/javascript">
 	var id = "<%=session.getAttribute("userid")%>"
@@ -111,7 +113,7 @@
 			<td><span id="stuno_msg"></span></td>
 		</tr>
 		<tr>
-			<td>学生：</td>
+			<td>学生姓名：</td>
 			<td><input type="text" name="stuname" value="<%=request.getParameter("stuname")==null?"":request.getParameter("stuname")%>" onblur="validateStuname(this.value)"></td>
 			<td><span id="stuname_msg"></span></td>
 		</tr>

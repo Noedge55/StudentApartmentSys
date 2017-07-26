@@ -16,7 +16,7 @@ body{
 	width: 290px;
 	height:300px;
 	border: solid rgb(0, 172, 230);
-	border-radius: 6px;	
+	border-radius: 6px;
 }
 .content1 font
 {
@@ -31,6 +31,9 @@ body{
 {
 	list-style: none;
 	float: left;
+}
+.content ul li{
+	margin: 10px;
 }
 .content a
 {

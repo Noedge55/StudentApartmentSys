@@ -28,7 +28,7 @@
 			<ul class="left-ul">
 				<li>东区</li>
 					<ins>
-						<ul class="apart_list">
+						<ul class="area_list">
 							<c:forEach var="apart" items="${listEast }" varStatus="status">
 								<c:if test="${apartno==apart.apartno}">
 									<li><a class="actived" href="DormitoryManagerServlet?apartno=${apart.apartno }">${apart.apartno }</a></li>									
@@ -41,7 +41,7 @@
 					</ins>
 				<li>西区</li>
 					<ins>
-					<ul>
+					<ul class="area_list">
 						<c:forEach var="apart" items="${listWest }" varStatus="status">
 								<c:if test="${apartno==apart.apartno}">
 									<li><a class="actived" href="DormitoryManagerServlet?apartno=${apart.apartno }">${apart.apartno }</a></li>									
@@ -66,9 +66,9 @@
 							</c:forEach>
 						</select>
 				</div>
-				<form action="DormitoryManagerServlet" style="display: inline-block;float: right;margin: 10px;">
+				<form action="DormitoryManagerServlet" style="display: inline-block;float: right;margin-right: 2px;">
 					<input type="submit" value="查询" >
-					<input type="text" name="keyword" style="background: #fff;color: #000;float: right;" placeholder="输入寝室号">
+					<input type="text" name="keyword" style="background: #fff;color: #000;" placeholder="输入寝室号">
 				</form>
 			</div>
 			
