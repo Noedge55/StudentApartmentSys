@@ -14,13 +14,13 @@ import edu.sas.vo.Student;
  * Servlet implementation class AddStudent
  */
 @WebServlet("/AddStudent")
-public class AddStudent extends HttpServlet {
+public class AddStudentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AddStudent() {
+    public AddStudentServlet() {
         super();
         // TODO Auto-generated constructor stub
     }

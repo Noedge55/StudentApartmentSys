@@ -14,13 +14,13 @@ import edu.sas.vo.Dormitory;
  * Servlet implementation class DormitoryInformation
  */
 @WebServlet("/DormitoryInformation")
-public class DormitoryInformation extends HttpServlet {
+public class DormitoryInformationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DormitoryInformation() {
+    public DormitoryInformationServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
