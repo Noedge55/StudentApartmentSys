@@ -74,12 +74,12 @@
     <url-pattern>/deleteApartmentServlet</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>apartmentStudentServlet</servlet-name>
-  	<servlet-class>edu.sas.servlet.ApartmentStudentServlet</servlet-class>
+    <servlet-name>apartmentStudentServlet</servlet-name>
+    <servlet-class>edu.sas.servlet.ApartmentStudentServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>apartmentStudentServlet</servlet-name>
-  	<url-pattern>/apartmentStudentServlet</url-pattern>
+    <servlet-name>apartmentStudentServlet</servlet-name>
+    <url-pattern>/apartmentStudentServlet</url-pattern>
   </servlet-mapping>
   <jsp-config>
     <taglib>

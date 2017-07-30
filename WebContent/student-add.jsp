@@ -94,11 +94,13 @@
 		}
 	}
 	function validate(f){
+		
 		return validateStuno(f.stuno.value)     &&
 			   validateStuname(f.stuname.value) &&
 			   validateMajor(f.major.value)		&&
 			   validateClassname(f.classname.value) &&
 			   validatePhonenum(f.phonenum.value)	;
+		
 	}
 </script>
 </head>
@@ -141,11 +143,12 @@
 		</tr>
 	</table>
 	</form>	
-	<form>
+	<form action="#" method="post" enctype="multipart/form-data">
 		<table>
 		<tr>
-			<td><input type="file" name="importFromExcel"></td>
-			<td><input class="btn" type="submit" value="导入"></td>
+			<!-- accept数据填写的是只能上传*.xls/*.xlsx两个类型的文件 -->
+			<td><input type="file" name="importFromExcel" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"></td>
+			<td><input class="btn" type="button" value="导入"></td>
 		</tr>
 		</table>
 	</form>
