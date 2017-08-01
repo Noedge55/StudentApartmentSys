@@ -27,7 +27,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>AddStudentServlet</servlet-name>
-    <servlet-class>edu.sas.servlet.AddStudent</servlet-class>
+    <servlet-class>edu.sas.servlet.AddStudentServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddStudentServlet</servlet-name>
@@ -43,7 +43,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>apartmentInformation</servlet-name>
-    <servlet-class>edu.sas.servlet.ApartmentInformation</servlet-class>
+    <servlet-class>edu.sas.servlet.ApartmentInformationServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>apartmentInformation</servlet-name>
@@ -51,7 +51,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>addApartment</servlet-name>
-    <servlet-class>edu.sas.servlet.AddApartment</servlet-class>
+    <servlet-class>edu.sas.servlet.AddApartmentServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>addApartment</servlet-name>
@@ -59,7 +59,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>dormitoryInformation</servlet-name>
-    <servlet-class>edu.sas.servlet.DormitoryInformation</servlet-class>
+    <servlet-class>edu.sas.servlet.DormitoryInformationServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>dormitoryInformation</servlet-name>
