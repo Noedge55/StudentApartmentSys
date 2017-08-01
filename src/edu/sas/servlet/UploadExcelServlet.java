@@ -66,7 +66,7 @@ public class UploadExcelServlet extends HttpServlet {
 			for(FileItem item:fileList){
 				list = this.importXlsx(item.getInputStream());
 				for(Student vo:list){
-					DAOFactory.getIStudentDAOInstance().doCreate(vo);
+//					DAOFactory.getIStudentDAOInstance().doCreate(vo);
 					msg = "导入成功";
 				}				
 			}
@@ -101,7 +101,7 @@ public class UploadExcelServlet extends HttpServlet {
 					Student vo = new Student();
 					vo.setStuno(getValue(row.getCell(0)));
 					vo.setStuname(getValue(row.getCell(1)));
-					int sex = (getValue(row.getCell(2)) == "男"?1:0);
+					int sex = (getValue(row.getCell(2)).equals("男")?1:0);
 					vo.setSex(sex);
 					vo.setMajor(getValue(row.getCell(3)));
 					vo.setClassname(getValue(row.getCell(4)));
