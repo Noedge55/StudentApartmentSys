@@ -1,4 +1,6 @@
 <%@ page contentType="text/html" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%> 
 <html>
 <head>
 <title>添加学生</title>
@@ -47,6 +49,11 @@
 	if(id == "null"){
 		alert("你还没有登录，请登录");
 		window.location.href="index.jsp";
+	}
+	var msg = "${msg}";
+	if(msg != "" && msg != null){
+		alert(msg);
+		window.location.href="apartmentStudentServlet";
 	}
 	function validateStuno(value){
 		if(!/\d{11}/.test(value)){
@@ -100,7 +107,6 @@
 			   validateMajor(f.major.value)		&&
 			   validateClassname(f.classname.value) &&
 			   validatePhonenum(f.phonenum.value)	;
-		
 	}
 </script>
 </head>
@@ -143,12 +149,12 @@
 		</tr>
 	</table>
 	</form>	
-	<form action="#" method="post" enctype="multipart/form-data">
+	<form action="UploadExcelServlet" method="post" enctype="multipart/form-data">
 		<table>
 		<tr>
 			<!-- accept数据填写的是只能上传*.xls/*.xlsx两个类型的文件 -->
 			<td><input type="file" name="importFromExcel" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"></td>
-			<td><input class="btn" type="button" value="导入"></td>
+			<td><input class="btn" type="submit" value="导入"></td>
 		</tr>
 		</table>
 	</form>
