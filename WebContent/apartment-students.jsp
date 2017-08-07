@@ -30,6 +30,14 @@ table,tr,td{
 	margin: 0px auto;
 	margin-bottom: 10px;
 }
+.left_title{
+	color:white;
+	background: rgb(0,172,230);
+	width: 50px;
+}
+ins{
+	text-align: center;
+}
 
 </style>
 </head>
@@ -41,7 +49,7 @@ table,tr,td{
 		<div class="left">
 			<font class="title">区域</font>
 			<ul class="left-ul">
-				<li>东区</li>
+				<li class="left_title">东区</li>
 					<ins>
 						<ul class="apart_list">
 							<c:forEach var="apart" items="${listEast }" varStatus="status">
@@ -54,7 +62,7 @@ table,tr,td{
 							</c:forEach>			
 						</ul>	
 					</ins>
-				<li>西区</li>
+				<li class="left_title">西区</li>
 					<ins>
 					<ul>
 						<c:forEach var="apart" items="${listWest }" varStatus="status">

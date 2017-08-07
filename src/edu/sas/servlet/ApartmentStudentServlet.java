@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import edu.sas.factory.DAOFactory;
 import edu.sas.vo.Apartment;
+import edu.sas.vo.Living;
 
 /**
  * Servlet implementation class ApartmentStudentServlet
@@ -47,6 +48,26 @@ public class ApartmentStudentServlet extends HttpServlet {
 			List<Apartment> listWest = DAOFactory.getIApartmentDAOInstance().findAll(areaWest);
 			request.setAttribute("listEast", listEast);
 			request.setAttribute("listWest", listWest);
+			
+			String apartno = request.getParameter("apartno");
+			String keyword = request.getParameter("keyword");	//查询关键字
+			if(apartno == null){
+				apartno = "";
+			}
+			if(keyword == null){
+				keyword = "";
+			}
+			//设置当前页，做分页操作，这里每页代表每个楼层
+			int pageNow = 1 ;
+			if(request.getParameter("pageNow") != null){
+				//若有当前页传来，则获取当前页
+				pageNow=Integer.parseInt(request.getParameter("pageNow")); 
+			}
+			
+			//输入该公寓下的所有学生
+			Apartment apart = DAOFactory.getIApartmentDAOInstance().findById(apartno);
+			List<Living> listLiving = DAOFactory.getILivingDAOInstance().findAll(apartno);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
